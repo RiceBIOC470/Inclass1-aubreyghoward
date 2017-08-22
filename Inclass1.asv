@@ -25,9 +25,7 @@ a2 = [a a]
 
 x2b = [x; x]
 
-%% The variable x2 is defining an array that contains two numbers defined earlier while a2 is defining an array
-% that containts the string '1' from the earlier questions.
-% x2 is a 1 row by 2 column array while x2b is a 2 row by 1 column array.
+%% The variable x2 is defining an array that contains two numbers by default while a2 is re
 
 %% = vs ==, isequal
 % explain why the identical commands with the == commands give different answers 
