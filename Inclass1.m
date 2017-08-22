@@ -4,11 +4,13 @@
 %% numbers vs strings
 % Run the following two sections. explain why one gives a sensible result and the other doesn't
 % Can you explain the value of the variable b? 
-x = 1; 
+x = 1;
 y = x + x
 %%
 a = '1';
-b = a+a
+b = a+a 
+% the reason that the first example is adding a numberical value assigned
+% to x, while the function in b is trying to 
 %% concatenation
 % what is being done by the following statements? what is the difference between x2 and a2? 
 % what is the difference between x2 and x2b (hint run the size command on
