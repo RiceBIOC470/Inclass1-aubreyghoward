@@ -10,7 +10,7 @@ y = x + x
 %%
 a = '1';
 b = a+a
-%% Adam Howard: the reason that the first example is adding a numberical value assigned
+% Adam Howard: the reason that the first example is adding a numberical value assigned
 % to x, while the function in b is trying to add together a string defined
 % in a.
 % Additionally, the value for b of 98 stems from Matlab's addtion of the
@@ -26,7 +26,7 @@ a2 = [a a]
 
 x2b = [x; x]
 
-%% Adam Howard: The variable x2 is defining an array that contains two numbers defined earlier while a2 
+% Adam Howard: The variable x2 is defining an array that contains two numbers defined earlier while a2 
 % is defining an array that containts the string '1' from the earlier questions.
 % x2 is a 1 row by 2 column array while x2b is a 2 row by 1 column array.
 
@@ -68,7 +68,7 @@ a == b
 b = 4;
 a == b 
 
-%So here we are searching the array in a for the value saved in variable
+%Adam Howard: So here we are searching the array in a for the value saved in variable
 %b. We are no longer asking to compare two arrays after we redefine b. 
 %%  : operator 
 %(hint for the following type "help colon" at the command line to see
@@ -127,38 +127,54 @@ m2 = 2*ones(2);
 m1*m2
 m1.*m2
 
-%Adam Howard: the first line is a matix 
+%Adam Howard: the first line is a matix dot product as defined by linear algebra. The second is a
+%"element wise" product between the two matracies. Source: https://www.mathworks.com/help/matlab/matlab_prog/array-vs-matrix-operations.html
+
 
 %explain this command:
 m2./m1
+
+% this comand is the right array division. This allows us to "divide" each 
+% element in array a by each corresponding element in array b.Source: https://www.mathworks.com/help/matlab/matlab_prog/array-vs-matrix-operations.html
+
+
 %extra credit: explain why this command gives a warning:
 m2/m1
+
+%Adam Howard: The warning comes from the fact that the "dividing" matrix not be in singularity. 
+%Because the determinate of the matrix is 0, the inverse of the matrix
+%cannot be found. So while the dimensions of the matricies do not prohibt
+%division, the divison cannot be performed. 
+
 %% access particular elements and groups of elements
 
-%define a random matrix
+%define a random matrix d
 
-rand_nums = rand(5);
+rand_nums = rand(5)
 
-%explain what is being done in each of the following lines
+
+d = [rand_nums]
+
+%Adam Howard: explain what is being done in each of the following lines
 
 rand_nums(2,3)
-
+% Adam Howard: this is finding the value in the 5x5 random number matrix at the 2nd row
+% and the 3rd column 
 
 rand_nums(2:4,3)
+%Adam Howard: This is returning the values from the 2nd, 3rd, and 4th rows in the 3rd
+%column
 
 rand_nums(1:2,3:4)
+%Adam Howard: This finds values in the in the both the first and second row in the 3rd
+%and 4th columns.
 
 rand_nums(:,2)
+%Adam Howard: this finds all the values in second column for every row in the array.
 
 rand_nums(1,:)
+%Adam Howard: this returns every value in row 1. 
 
 rand_nums(:,[1 3 5])
+%Adam Howard: for every row, the values in 1st, 3rd, and 5th columns are returned.
 
-
-%%
-a = ones(2)
-b = 2*ones(2)
-c = [1,1;2,2]
-d = 3*ones(2)
-x = b.*a
-y = d*c
