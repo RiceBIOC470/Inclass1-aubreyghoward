@@ -144,7 +144,8 @@ m2/m1
 %Adam Howard: The warning comes from the fact that the "dividing" matrix not be in singularity. 
 %Because the determinate of the matrix is 0, the inverse of the matrix
 %cannot be found. So while the dimensions of the matricies do not prohibt
-%division, the divison cannot be performed. 
+%division, the divison cannot be performed. Source: https://www.mathworks.com/help/matlab/matlab_prog/array-vs-matrix-operations.html
+
 
 %% access particular elements and groups of elements
 
