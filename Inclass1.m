@@ -1,3 +1,4 @@
+%AW: Looks good. 0.99/1. See my comment below. 
 <<<<<<< HEAD
 % InClass1: some simple excerises to get started with MATLAB. Please complete by
 % the second class. Answer questions in comments and return assignment via
@@ -70,6 +71,9 @@ a == b
 
 %Adam Howard: So here we are searching the array in a for the value saved in variable
 %b. We are no longer asking to compare two arrays after we redefine b. 
+%This is almost correct, but imprecise. We aren't really searching, but comparing each value in a with the number stored in b and
+% returning a logical array of the results. -0.01.
+
 %%  : operator 
 %(hint for the following type "help colon" at the command line to see
 % how the ":" operator works
